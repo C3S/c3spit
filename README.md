@@ -28,6 +28,8 @@ clone the echoprint-codegen in a subdirectory of c3spit:
 
 git clone https://github.com/spotify/echoprint-codegen.git
 
+Echoprint depends on ffmpeg. In doubt, use one of the 'Linux Static Builds' on http://ffmpeg.org/download.html .
+
 ## Build 
 
 gcc -o c3spit c3spit.c -lasound
