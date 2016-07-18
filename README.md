@@ -10,8 +10,8 @@ If you have an Ubuntu 14.04 installed, you might want to take a shortcut and ins
 
 Otherwise, clone this git repo and enter it:
 
-git clone https://github.com/C3S/c3spit.git
-cd c3spit
+* git clone https://github.com/C3S/c3spit.git
+* cd c3spit
 
 ## License
 
