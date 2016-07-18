@@ -5,8 +5,8 @@ This software demonstrates how we envision the playlist monitoring in clubs usin
 
 If you have an Ubuntu 14.04 installed, you might want to take a shortcut and install just the binaries, so you can skip the Build step:
 
-https://files.c3s.cc/c3spit-ubuntu14.04-64bin.tgz (64 bit build)
-https://files.c3s.cc/c3spit-ubuntu14.04-32bin.tgz (32 bit build)
+* https://files.c3s.cc/c3spit-ubuntu14.04-64bin.tgz (64 bit build)
+* https://files.c3s.cc/c3spit-ubuntu14.04-32bin.tgz (32 bit build)
 
 Otherwise, clone this git repo and enter it:
 
@@ -15,10 +15,10 @@ cd c3spit
 
 ## Prerequisites
 
-sudo apt-get install gcc
-sudo apt-get install libasound2-dev 
-sudo apt-get install libboost1.55-dev libtag1-dev zlib1g-dev
-sudo apt-get install gnustep-gui-runtime jq
+* sudo apt-get install gcc
+* sudo apt-get install libasound2-dev 
+* sudo apt-get install libboost1.55-dev libtag1-dev zlib1g-dev
+* sudo apt-get install gnustep-gui-runtime jq
 
 clone the echoprint-codegen in a subdirectory of c3spit:
 git clone https://github.com/spotify/echoprint-codegen.git
@@ -29,9 +29,9 @@ gcc -o c3spit c3spit.c -lasound
 
 also build the codegen:
 
-cd echoprint-codegen/src
-make
-cd ../..
+* cd echoprint-codegen/src
+* make
+* cd ../..
 
 Check the recorder with a test run:
 
