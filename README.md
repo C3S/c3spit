@@ -3,9 +3,10 @@ C3S Playlist Inspection Tool
 
 This software demonstrates how we envision the playlist monitoring in clubs using a blackbox. It records audio sgnals from line-in, stores it in a wav file, creates a fingerprint from the wav, uses the fingerprint to query our Echoprint server to see if there is a match in the database (which holds a selection of over 100.000 tracks for testing purposes currently).
 
-First, clone this git repo:
+First, clone this git repo and enter it:
 
 git clone https://github.com/C3S/c3spit.git
+cd c3spit
 
 ## Prerequisites
 
@@ -14,11 +15,22 @@ sudo apt-get install libasound2-dev
 sudo apt-get install libboost1.55-dev libtag1-dev zlib1g-dev
 sudo apt-get install gnustep-gui-runtime
 
-create a subdirectory for the echoprint-codegen:
+clone the echoprint-codegen in a subdirectory of c3spit:
+git clone https://github.com/spotify/echoprint-codegen.git
 
 ## Build 
 
 gcc -o c3spit c3spit.c -lasound
+
+also build the codegen:
+
+cd echoprint-codegen/src
+make
+cd ../..
+
+Check the recorder with a test run:
+
+./c3spit hw:0
 
 ## Prepare audio input
 
@@ -31,3 +43,7 @@ If you have more than one sound device in your system, you might need to adapt t
 Finally, just start the script:
 
 ./c3spit.sh
+
+Try some older music first for more hits. If you don't get music recognized after playing some tracks and to ultimately be certain about the audio quality, playback the recorded samples.wav after a test start of ./c3spit.sh. 
+
+Have fun!
