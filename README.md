@@ -3,7 +3,12 @@ C3S Playlist Inspection Tool
 
 This software demonstrates how we envision the playlist monitoring in clubs using a blackbox. It records audio sgnals from line-in, stores it in a wav file, creates a fingerprint from the wav, uses the fingerprint to query our Echoprint server to see if there is a match in the database (which holds a selection of over 100.000 tracks for testing purposes currently).
 
-First, clone this git repo and enter it:
+If you have an Ubuntu 14.04 installed, you might want to take a shortcut and install just the binaries, so you can skip the Build step:
+
+https://files.c3s.cc/c3spit-ubuntu14.04-64bin.tgz (64 bit build)
+https://files.c3s.cc/c3spit-ubuntu14.04-32bin.tgz (32 bit build)
+
+Otherwise, clone this git repo and enter it:
 
 git clone https://github.com/C3S/c3spit.git
 cd c3spit
