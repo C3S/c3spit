@@ -1,8 +1,8 @@
 while [ 1 ]; do
 	echo "recording ..."
-	./c3spit hw:0 > log.txt
+	./c3spit hw:0 >> log.txt
 	echo "creating fingerprint ..."
-	./echoprint-codegen samples.wav > postdata
+	./echoprint-codegen/echoprint-codegen samples.wav > postdata
 	echo "sending fingerprint to the server ..."
 	jq -r '.[0].code' < postdata > code
 	c=`cat code`
@@ -21,9 +21,10 @@ while [ 1 ]; do
 			t=`cat track`
 			if [[ $a != "null" ]]; then 
 				echo "$a - $t"
-				say $a > /dev/null
-				say $t > /dev/null
+				say $a > /dev/null 2> /dev/null
+				say $t > /dev/null 2> /dev/null
 			fi
+			echo ">>> recognized $a - $t <<<" >> log.txt
 		else
 			echo "still playing $a - $t ..."
 		fi

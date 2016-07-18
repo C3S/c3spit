@@ -7,7 +7,7 @@
   From on Paul David's tutorial : http://equalarea.com/paul/alsa-audio.html
   Fixes rate and buffer problems
   sudo apt-get install libasound2-dev
-  gcc -o c3spit c3spit.c -lasound && ./c3spit hw:0
+  gcc -o c3spit c3spit.c -lasound & ./c3spit hw:0
 */
 
 #include <stdio.h>
