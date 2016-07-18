@@ -13,7 +13,7 @@ cd c3spit
 sudo apt-get install gcc
 sudo apt-get install libasound2-dev 
 sudo apt-get install libboost1.55-dev libtag1-dev zlib1g-dev
-sudo apt-get install gnustep-gui-runtime
+sudo apt-get install gnustep-gui-runtime jq
 
 clone the echoprint-codegen in a subdirectory of c3spit:
 git clone https://github.com/spotify/echoprint-codegen.git

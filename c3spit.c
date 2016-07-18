@@ -22,7 +22,7 @@ main (int argc, char *argv[])
 #define NO_OF_BUFFER 10
   char *buffer[NO_OF_BUFFER];
   int buffer_frames = 163840;
-  unsigned int rate = 11025;
+  unsigned int rate = 44100;
   int channels = 2;
   snd_pcm_t *capture_handle;
   snd_pcm_hw_params_t *hw_params;
