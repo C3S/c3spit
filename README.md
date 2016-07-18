@@ -34,7 +34,7 @@ Check the recorder with a test run:
 
 ## Prepare audio input
 
-First, got to your sound settings and make sure the signal level is not to high because distorted music won't be recognized. Sometimes the level is just too high to be normalized undistorted by the audio input mixer. In this case, try a device with an earphone socket, that won't switch off your main audio out when a cable is plugged in (otherwise you would need a Y-cable). Often the output level of the headphone can be adjusted separately.
+First, got to your sound settings and make sure the signal level is not to high because distorted music won't be recognized. Sometimes the level is just too high to be normalized undistorted by the audio input mixer. In this case, try a device with an earphone socket, that won't switch off your main audio out when a cable is plugged in (otherwise you would need a Y-cable). Often the output level of the headphone can be adjusted separately. Try low values first 10% or -20dB.
 
 If you have more than one sound device in your system, you might need to adapt the soundcard parameter (hw) in the shell script c3spit.sh, line "./c3spit.sh hw:0". 
 
