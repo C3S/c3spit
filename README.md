@@ -21,6 +21,7 @@ cd c3spit
 * sudo apt-get install gnustep-gui-runtime jq
 
 clone the echoprint-codegen in a subdirectory of c3spit:
+
 git clone https://github.com/spotify/echoprint-codegen.git
 
 ## Build 
