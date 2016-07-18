@@ -1,9 +1,26 @@
-/* 
-  A Minimal Capture Program
+/*
+  Copyright 2016, Cultural Commons Collecting Society SCE mit
+                       beschränkter Haftung (C3S SCE)
+  Copyright 2016, Thomas Mielke <thomas.mielke@c3s.cc>
+                        (essentially writing buffers to a .wav file)
+  c3spit is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.  
+  c3spit is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.  
+  You should have received a copy of the GNU General Public License
+  along with c3spit.  If not, see <http://www.gnu.org/licenses/>.
+    
+  Based on 'Minimal Capture Program' by albanpeignier
+  see https://gist.github.com/albanpeignier/104902
+  
   This program opens an audio interface for capture, configures it for
   stereo, 16 bit, 44.1kHz, interleaved conventional read/write
-  access. Then its reads a chunk of random data from it, and exits. It
-  isn't meant to be a real program.
+  access. Then its reads a chunk of random data from it, and exits.
+  
   From on Paul David's tutorial : http://equalarea.com/paul/alsa-audio.html
   Fixes rate and buffer problems
   sudo apt-get install libasound2-dev

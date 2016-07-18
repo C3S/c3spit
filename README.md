@@ -13,6 +13,10 @@ Otherwise, clone this git repo and enter it:
 git clone https://github.com/C3S/c3spit.git
 cd c3spit
 
+## License
+
+All sources are released under the GNU General Public License v3.
+
 ## Prerequisites
 
 * sudo apt-get install gcc
